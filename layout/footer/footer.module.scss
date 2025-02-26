@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&display=swap');
+
+.footer{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 1px solid #6b7280;
+    gap: 1rem;
+    line-height: 1.5rem;
+    h1{
+        font-weight: 600;
+        font-size: 1.5rem;
+        color: #bcc1cc;
+        font-family: "Alegreya SC", serif;
+    }
+    .info{
+        text-align: center;
+        p{
+            width: 100%;
+            max-width: 25rem;
+        }
+        
+    }
+}
