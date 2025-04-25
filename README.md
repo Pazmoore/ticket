@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎟️ MovieFest - Modern Ticketing Web App
 
-## Getting Started
+**TicketLake** is a dynamic and responsive ticketing shop built with **Next.js** and **SCSS**. Users can explore, manage, and showcase events with ease — including uploading custom images for each ticket. The platform combines great UI/UX with powerful form handling and cloud integration.
 
-First, run the development server:
+Live Demo: [ticket-lake-two.vercel.app](https://ticket-lake-two.vercel.app/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- ⚡ **Built with Next.js** — Fast performance, server-side rendering, and SEO optimized.
+- 💅 **Styled with SCSS** — Custom, modular styling for flexibility and clean design.
+- 🖼️ **Image Upload Support** — Upload and manage ticket/event images via Cloudinary.
+- 📝 **Form Validation** — Forms built using `react-hook-form` and `yup` for smooth and reliable input handling.
+- 🎭 **Dynamic Event Pages** — Each ticket/event has a dedicated, shareable page.
+- 📱 **Fully Responsive Design** — Looks great on mobile, tablet, and desktop.
+- 🌩️ **Cloudinary Integration** — Store and serve images efficiently in the cloud.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 📄 Pages
 
-To learn more about Next.js, take a look at the following resources:
+### 🏠 Home
+- Hero section with featured events
+- Event cards with quick-view information
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 📄 Event Details
+- Full description, ticket options, and image of the event
+- Image display pulled from Cloudinary uploads
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 🛒 Ticket Upload / Create Event *(Admin or User form)*
+- Upload ticket details and images
+- Real-time form validation and preview
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🛠️ Tech Stack
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Framework:** [Next.js](https://nextjs.org/)
+- **Styling:** SCSS Modules
+- **Forms:** `react-hook-form`, `yup`, `@hookform/resolvers`
+- **Image Upload:** [Cloudinary](https://cloudinary.com/)
+- **Icons:** [React Icons](https://react-icons.github.io/react-icons/)
+- **Deployment:** [Vercel](https://vercel.com/)
+
+---
+📁 Folder Structure
+/pages
+  index.tsx         # Home page
+  /event
+    [id].tsx        # Event detail page
+
+/public
+  /images           # Static images
+
+/styles
+  globals.scss
+  Home.module.scss
+
+/components
+  Navbar.tsx
+  Footer.tsx
+  EventCard.tsx
+  ImageUploader.tsx  # Cloudinary-based uploader
+
+  ---
+
+🖼️Image Upload Feature
+. Tickets/events support image uploads using Cloudinary.
+. Users can upload JPG/PNG images via a drag-and-drop or file input.
+. Uploaded images are displayed on the event's detail page.
